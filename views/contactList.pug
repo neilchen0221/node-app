@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1 Contact List
+    ul
+        each contact, i in contacts
+            li #{`${contact.firstName} ${contact.lastName}`}
