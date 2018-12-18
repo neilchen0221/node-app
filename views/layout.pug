@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title Liuxuewang
+        link(rel='stylesheet',href='style/bootstrap/bootstrap.min.css')
+    body
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            .container
+                a.navbar-brand(href='/') Navbar
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarNavAltMarkup.collapse.navbar-collapse
+                    .navbar-nav
+                        a.nav-item.nav-link(href='/')
+                            | Home 
+                            span.sr-only (current)
+                        a.nav-item.nav-link(href='/contact') Contact
+        .container
+            block content 
+            br
+            hr
+            footer
+                p Copyright &copy; 2018 Neil Chen
+        script(src='js/jquery/jquery-3.3.1.js')
+        script(src='js/bootstrap/bootstrap.min.js')
+        
