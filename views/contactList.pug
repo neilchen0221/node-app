@@ -1,7 +1,14 @@
 extends layout
 
 block content
-    h1 Contact List
-    ul
+    h1.my-3 Contact List
+    a.btn.btn-primary(href='/contact/add') New Contact
+    ul.list-group.mt-3
         each contact, i in contacts
-            li #{`${contact.firstName} ${contact.lastName}`}
+            li.list-group-item.d-flex.justify-content-between.align-items-center
+                | #{`${contact.firstName} ${contact.lastName}`}
+                span #{contact.mobile}
+                span #{contact.email}
+                span
+                    a.mr-3(href=`/contact/edit/${contact._id}`) Edit
+                    a(href='#') Delete
