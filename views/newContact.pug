@@ -1,22 +1,23 @@
 extends layout
 
 block content
-    h1 New Contact
-    form(method='POST',action="/api/contacts")
-        .form-group
-            label First Name:
-            input.form-control(name='firstName',type='text')
-        .form-group
-            label Last Name:
-            input.form-control(name='lastName',type='text')
-        .form-group
-            label Email:
-            input.form-control(name='email',type='text')
-        .form-group
-            label Mobile:
-            input.form-control(name='mobile',type='text') 
-        .form-group
-            label Message:
-            textarea.form-control(name='message',type='text') 
-        br
-        input.btn.btn-primary(type='submit',value='submit')
+    .container
+        h1 New Contact
+        form(method='POST',action="/api/contacts")
+            .form-group
+                label First Name:
+                input.form-control(name='firstName',type='text')
+            .form-group
+                label Last Name:
+                input.form-control(name='lastName',type='text')
+            .form-group
+                label Email:
+                input.form-control(name='email',type='text')
+            .form-group
+                label Mobile:
+                input.form-control(name='mobile',type='text') 
+            .form-group
+                label Message:
+                textarea.form-control(name='message',type='text') 
+            br
+            input.btn.btn-primary(type='submit',value='Submit')
