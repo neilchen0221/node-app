@@ -16,10 +16,6 @@ const contactSchema = mongoose.Schema({
   mobile: {
     type: String,
     required: true
-  },
-  message: {
-    type: String,
-    required: true
   }
 });
 
